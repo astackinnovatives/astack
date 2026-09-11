@@ -1,0 +1,7 @@
+:HL["/_next/static/chunks/1qz3_udkb16z5.css","style"]
+:HL["/_next/static/chunks/0u21_5vp43hvg.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap","style"]
+:HL["https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap","style"]
+:HL["https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap-grid.min.css","style"]
+:HL["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css","style",{"type":"text/css"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"works","param":null,"prefetchHints":4192,"slots":{"children":{"name":"id","param":{"type":"d","key":"sakhi-real-estate","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"ZvmIoXcAw2V8kPjtiKvG5"}
