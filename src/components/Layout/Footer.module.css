@@ -1,0 +1,92 @@
+.footer {
+    padding-top: var(--mantine-spacing-xxl);
+    background-color: black;
+    color: var(--mantine-color-color-0);
+}
+
+.footer h2 {
+    font-size: var(--mantine-font-size-lg);
+    margin-bottom: .5rem;
+    color: var(--mantine-color-color-2);
+}
+
+.footerLogo {
+    max-height: calc(2rem + 1vw);
+    margin-bottom: 1rem;
+}
+
+.footerLink {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: .5rem;
+    padding-block: .35rem;
+    transition: .5s;
+    color: inherit;
+}
+
+.footerLink:not(:has(svg))::before {
+    content: '';
+    background: var(--mantine-color-color-3);
+    height: .5rem;
+    width: .75rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+    background: var(--primary);
+}
+
+.footerLink svg {
+    color: var(--mantine-color-color-3);
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.footerLink:hover {
+    translate: .25rem 0;
+}
+
+.footerAddress {
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .75rem;
+    margin-top: .5rem;
+}
+
+.footerAddress img {
+    max-height: 1.75rem;
+    margin-top: .35rem;
+}
+
+.footerAddress h3 {
+    color: var(--mantine-color-color-2);
+    font-size: var(--fs-1);
+    margin-bottom: .35rem;
+}
+
+.footerBottom {
+    position: relative;
+    margin-top: var(--mantine-spacing-xxl);
+    padding-block: var(--mantine-spacing-xl);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    font-size: var(--mantine-font-size-sm);
+}
+
+.footerBottom a {
+    font-weight: 600;
+}
+
+.footerBottom::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: var(--gd-1);
+}
+
+@media (max-width: 767px) {}

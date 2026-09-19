@@ -1,0 +1,51 @@
+.touch {
+    background-color: black;
+    padding-block: var(--mantine-spacing-xxl);
+    overflow: hidden;
+    border-radius: 1.5rem;
+    position: relative;
+    z-index: -2;
+
+    &::before {
+        content: '';
+        display: block;
+        aspect-ratio: 1;
+        height: 50%;
+        border-radius: 50%;
+        background-color: var(--primary);
+        position: absolute;
+        inset: 50% auto auto 0;
+        z-index: -1;
+        translate: -50% -25%;
+        filter: blur(3rem);
+        animation: zoomInOut 4s ease-in-out infinite;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        aspect-ratio: 1;
+        height: 50%;
+        border-radius: 50%;
+        background-color: var(--secondary);
+        position: absolute;
+        inset: 0 0 auto auto;
+        z-index: -1;
+        translate: 50% 10%;
+        filter: blur(3rem);
+        animation: zoomInOut 4s ease-in-out infinite;
+        animation-delay: 1s;
+    }
+}
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.5;
+    }
+}

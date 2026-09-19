@@ -1,0 +1,97 @@
+.nav {
+    z-index: 99;
+    transition: .5s;
+    position: sticky;
+    inset: 0 0 auto 0;
+    transition: .5s;
+    padding-block: .75rem;
+    background-color: transparent;
+}
+
+.nav.scroll {
+    animation: fadeInDown 1s;
+    box-shadow: var(--mantine-shadow-md);
+    background-color: white;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-2.5rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body:has([data-nav-fixed]) .nav {
+    position: fixed;
+}
+
+.navLogo>img {
+    cursor: pointer;
+    max-height: calc(2rem + 1vw);
+}
+
+.navLink,
+.dropLink {
+    position: relative;
+    display: grid;
+    cursor: pointer;
+    transition: .5s;
+    /* text-transform: uppercase; */
+    padding-block: .15rem;
+    font-weight: 500;
+}
+
+.navLink:has(svg) {
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: start;
+    gap: .1rem;
+}
+
+.navLink>svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.navLink:hover,
+.navLink.active {
+    color: var(--primary);
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondary);
+    scale: 0 1;
+    transition: .5s;
+}
+
+.navLink:is(:hover, .active)::after {
+    scale: .75 1;
+}
+
+@media (max-width: 991px) {
+    :global(.mantine-Drawer-content) {
+        background-color: black;
+    }
+
+    .mLink :global(.mantine-NavLink-label) {
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: var(--mantine-font-size-lg);
+        color: white;
+    }
+
+    .mLink[data-active] {
+        background: var(--primary);
+        border-radius: .5rem;
+    }
+}

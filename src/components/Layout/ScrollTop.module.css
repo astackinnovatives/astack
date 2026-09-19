@@ -1,0 +1,37 @@
+.top {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    background-color: var(--secondary);
+    color: var(--mantine-color-color-1);
+    position: fixed;
+    inset: auto 1rem 1rem auto;
+    cursor: pointer;
+    transition: .75s;
+    z-index: 99;
+    scale: 0;
+    opacity: 0;
+    box-shadow: var(--sd-1);
+    overflow: hidden;
+    display: grid;
+    align-items: end;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+}
+
+.top.active {
+    scale: 1;
+    opacity: 1;
+}
+
+.top span {
+    background-color: var(--primary);
+    height: 100%;
+    transition: height 0.35s;
+}
+
+.top>svg {
+    position: absolute;
+    inset: 0;
+    margin: auto;   
+}
