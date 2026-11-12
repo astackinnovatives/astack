@@ -1,6 +1,7 @@
+"use client"
+
 import { IconBrandWhatsapp, IconMailOpened, IconPhone } from "@tabler/icons-react";
-import { ActionIcon, Anchor, Box, Image, Stack } from "@mantine/core";
-import React from "react";
+import { ActionIcon, Anchor, Box, Group, Image, Stack, Text } from "@mantine/core";
 
 type Item = {
     href: string
@@ -55,20 +56,72 @@ export default function Connect() {
                 </Stack>
             </Box>
 
-            {/* <Anchor
-                href="https://wa.me/"
-                target="_blank"
-                rel="noopener noreferrer"
+
+            <Anchor
+                href="tel:+64274076999"
                 pos="fixed"
-                inset="auto auto .75rem .75rem"
-                style={{ zIndex: 99 }}
+                bottom="1rem"
+                left="1rem"
+                style={{
+                    zIndex: 99,
+                    textDecoration: "none",
+                    borderRadius: "50px",
+                    overflow: "hidden",
+                    boxShadow: "0 6px 24px rgba(0, 35, 75, 0.25)",
+                    transition: "all 200ms ease",
+                }}
+                bg="#004281"
             >
-                <Image
-                    src="/assets/images/wp.gif"
-                    alt="WhatsApp"
-                    h="4rem"
-                />
-            </Anchor> */}
+                <Group
+                    p="xs"
+                    px="xs"
+                    wrap="nowrap"
+                    gap="sm"
+                    align="center"
+                >
+                    <Image
+                        src="/assets/images/icons/new-zealand.png"
+                        alt="New Zealand"
+                        w="32px"
+                        h="32px"
+                        radius="50%"
+                        fit="cover"
+                    />
+
+                    <Stack gap={0}>
+                        <Text
+                            c="white"
+                            size="xs"
+                            fw={500}
+                            lh={1.2}
+                        >
+                            Call us now
+                        </Text>
+
+                        <Text
+                            c="white"
+                            size="sm"
+                            fw={700}
+                            lh={1.4}
+                            style={{ letterSpacing: "0.3px" }}
+                        >
+                            027 407 6999
+                        </Text>
+                    </Stack>
+
+                    <ActionIcon
+                        variant="white"
+                        color="blue"
+                        radius="xl"
+                        size="2.25rem"
+                        aria-label="Call us"
+                        style={{ pointerEvents: "none" }}
+                    >
+                        <IconPhone size="1.2rem" stroke={2} />
+                    </ActionIcon>
+                </Group>
+            </Anchor>
+
         </section>
     );
 }
