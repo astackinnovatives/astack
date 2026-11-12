@@ -30,7 +30,7 @@ const items: Item[] = [
 export default function Connect() {
     return (
         <section>
-            <Box
+            {/* <Box
                 pos="fixed"
                 inset="50% 0 auto auto"
                 style={{
@@ -54,73 +54,103 @@ export default function Connect() {
                         </ActionIcon>
                     )}
                 </Stack>
-            </Box>
+            </Box> */}
 
 
-            <Anchor
-                href="tel:+64274076999"
+
+            <Stack
                 pos="fixed"
                 bottom="1rem"
                 left="1rem"
-                style={{
-                    zIndex: 99,
-                    textDecoration: "none",
-                    borderRadius: "50px",
-                    overflow: "hidden",
-                    boxShadow: "0 6px 24px rgba(0, 35, 75, 0.25)",
-                    transition: "all 200ms ease",
-                }}
-                bg="#004281"
+                gap="xs"
+                style={{ zIndex: 99 }}
+                visibleFrom="md"
             >
-                <Group
-                    p="xs"
-                    px="xs"
-                    wrap="nowrap"
-                    gap="sm"
-                    align="center"
+                <Anchor
+                    href="tel:+64274076999"
+                    style={{
+                        textDecoration: "none",
+                        borderRadius: "50px",
+                        overflow: "hidden",
+                        boxShadow: "0 6px 24px rgba(0, 35, 75, 0.25)",
+                    }}
+                    bg="#004281"
                 >
-                    <Image
-                        src="/assets/images/icons/new-zealand.png"
-                        alt="New Zealand"
-                        w="32px"
-                        h="32px"
-                        radius="50%"
-                        fit="cover"
-                    />
+                    <Group p="xs" wrap="nowrap" gap="sm" align="center">
+                        <Image
+                            src="/assets/images/icons/new-zealand.png"
+                            alt="New Zealand"
+                            w="32px"
+                            h="32px"
+                            radius="50%"
+                            fit="cover"
+                        />
 
-                    <Stack gap={0}>
-                        <Text
-                            c="white"
-                            size="xs"
-                            fw={500}
-                            lh={1.2}
+                        <Stack gap={0}>
+                            <Text c="white" size="xs" fw={500}>
+                                Call us - New Zealand
+                            </Text>
+                            <Text c="white" size="sm" fw={700}>
+                                +64 2740 76999
+                            </Text>
+                        </Stack>
+
+                        <ActionIcon
+                            variant="white"
+                            color="blue"
+                            radius="xl"
+                            size="2.25rem"
+                            aria-label="Call New Zealand"
+                            style={{ pointerEvents: "none" }}
                         >
-                            Call us now
-                        </Text>
+                            <IconPhone size="1.2rem" stroke={2} />
+                        </ActionIcon>
+                    </Group>
+                </Anchor>
 
-                        <Text
-                            c="white"
-                            size="sm"
-                            fw={700}
-                            lh={1.4}
-                            style={{ letterSpacing: "0.3px" }}
+                <Anchor
+                    href="tel:+919895251333"
+                    style={{
+                        textDecoration: "none",
+                        borderRadius: "50px",
+                        overflow: "hidden",
+                        boxShadow: "0 6px 24px rgba(0, 35, 75, 0.25)",
+                    }}
+                    bg="#138808"
+                >
+                    <Group p="xs" wrap="nowrap" gap="sm" align="center">
+                        <Image
+                            src="/assets/images/icons/indian-flag.png"
+                            alt="India"
+                            w="32px"
+                            h="32px"
+                            radius="50%"
+                            fit="cover"
+                        />
+
+                        <Stack gap={0} flex={1}>
+                            <Text c="white" size="xs" fw={500}>
+                                Call us - India
+                            </Text>
+                            <Text c="white" size="sm" fw={700}>
+                                +91 98952 51333
+                            </Text>
+                        </Stack>
+
+                        <ActionIcon
+                            variant="white"
+                            color="green"
+                            radius="xl"
+                            size="2.25rem"
+                            aria-label="Call India"
+                            style={{ pointerEvents: "none" }}
                         >
-                            027 407 6999
-                        </Text>
-                    </Stack>
+                            <IconPhone size="1.2rem" stroke={2} />
+                        </ActionIcon>
+                    </Group>
+                </Anchor>
+            </Stack>
 
-                    <ActionIcon
-                        variant="white"
-                        color="blue"
-                        radius="xl"
-                        size="2.25rem"
-                        aria-label="Call us"
-                        style={{ pointerEvents: "none" }}
-                    >
-                        <IconPhone size="1.2rem" stroke={2} />
-                    </ActionIcon>
-                </Group>
-            </Anchor>
 
         </section>
     );
