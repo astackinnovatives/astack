@@ -26,7 +26,7 @@ const address = [
     {
         icon: "new-zealand.png",
         title: "astack",
-        text: "21 A, Kenepuru Drive, Porirua Wellington, NZ",
+        text: "229 Bealey Avenue, Christchurch Central, Christchurch 8013 New Zealand",
     },
 ]
 
@@ -182,6 +182,22 @@ export default function Footer() {
                             <a href="#" className={css.footerLink}>
                                 <IconLocation stroke={1.5} />
                                 3rd Floor Geo Infopark Kinfra Industrial Complex Kakkanad, INDIA
+                            </a>
+
+                            <h4>New Zealand</h4>
+
+                            <a
+                                href="tel:+64274076999"
+                                className={css.footerLink}
+                            >
+                                <IconPhone stroke={1.5} /> 027 407 6999
+                            </a>
+
+                            <a
+                                href="mailto:bd@astack.co.nz"
+                                className={css.footerLink}
+                            >
+                                <IconMailOpened stroke={1.5} /> bd@astack.co.nz
                             </a>
                         </div>
 

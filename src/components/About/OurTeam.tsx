@@ -22,6 +22,11 @@ const items = [
         name: `Ajith Subrahamanyam`,
     },
     {
+        image: `hari-purushothaman.jpg`,
+        position: `President - Marketing`,
+        name: `Hari Purushothaman`,
+    },
+    {
         image: `parvathi.png`,
         position: `President Customer Relations`,
         name: `Parvathi Ajith`,

@@ -10,6 +10,14 @@
     color: var(--mantine-color-color-2);
 }
 
+.footer h4 {
+    font-size: var(--mantine-font-size-md);
+    margin-block: .5rem;
+    color: var(--mantine-color-color-6);
+    border-block: 1px solid var(--mantine-color-color-6);
+    padding-block: .25rem;
+}
+
 .footerLogo {
     max-height: calc(2rem + 1vw);
     margin-bottom: 1rem;

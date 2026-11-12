@@ -18,6 +18,7 @@ const items: Item[] = [
         links: [
             [`tel:+919895251333`, `+91 98952 51333`],
             [`tel:+919037090652`, `+91 90370 90652`],
+            [`tel:+64274076999`, `+64 27 407 6999 (NZ)`],
         ],
         col: `col-md-6`
     },
@@ -25,6 +26,7 @@ const items: Item[] = [
         icon: <IconMailOpened stroke={1.5} color="var(--mantine-color-color-3)" />,
         links: [
             [`mailto:info@astack.co`, `info@astack.co`],
+            [`mailto:bd@astack.co.nz`, `bd@astack.co.nz`],
         ],
         col: `col-md-6`
     },
@@ -32,6 +34,7 @@ const items: Item[] = [
         icon: <IconLocation stroke={1.5} color="var(--mantine-color-color-3)" />,
         links: [
             [`#`, `3rd Floor Geo Infopark Kinfra Industrial ComplexKakkanad, INDIA`],
+            [`#`, `229 Bealey Avenue, Christchurch Central, Christchurch 8013 New Zealand`],
         ],
         col: `col-md-12`
     },
