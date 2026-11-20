@@ -27,9 +27,9 @@ const items = [
         name: `Hari Purushothaman`,
     },
     {
-        image: `muhammed-azlam.jpg`,
+        image: `aslam.jpg`,
         position: `President Sales , Oceania Region`,
-        name: `Muhammed Azlam`,
+        name: `Aslam Muhammed`,
     },
     {
         image: `parvathi.png`,

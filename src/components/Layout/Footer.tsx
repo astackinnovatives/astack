@@ -190,7 +190,7 @@ export default function Footer() {
                                 href="tel:+64274076999"
                                 className={css.footerLink}
                             >
-                                <IconPhone stroke={1.5} /> 027 407 6999
+                                <IconPhone stroke={1.5} /> +64 27 407 6999
                             </a>
 
                             <a
