@@ -18,7 +18,7 @@ export default function OurWorks() {
                             </p>
                         </div>
                     </Reveal>
-                    {works.slice(0, 4).map((item, i) =>
+                    {works.filter((w) => w.featured).slice(0, 4).map((item, i) =>
                         <Reveal className="col-md-5" key={i} animation="zoom-in">
                             <ProjectCard item={item} />
                         </Reveal>
@@ -35,7 +35,7 @@ export default function OurWorks() {
                             <Button
                                 component={Link}
                                 color="black"
-                                href="/about"
+                                href="/works"
                                 variant="outline"
                             >
                                 View More Works

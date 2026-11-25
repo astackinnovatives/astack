@@ -1,5 +1,7 @@
 export type Work = {
     id: string;
+    /** Show this project in the home page "Our Works" section */
+    featured?: boolean;
     category: string[];
     hero: {
         title: string;
@@ -30,6 +32,280 @@ export type Work = {
 };
 
 export const works: Work[] = [
+    {
+        id: `global-source`,
+        featured: true,
+        category: [`UI/UX`, `Website`],
+        hero: {
+            title: `Global Source`,
+            cat: `Construction Products`,
+            text: `Building a Trusted Digital Showroom for Saudi Arabia's Construction Industry`,
+            link: `https://globalsource.pages.dev/`,
+            image: `global-source-1.jpg`,
+            chip: [`UI/UX Design`, `Website Development`, `Product Catalogue`, `Responsive Design`, `SEO Optimization`]
+        },
+        secOne: {
+            challenge: [
+                `Global Source is a specialist supplier of construction products and solutions in Saudi Arabia, with more than 20 years of experience and offices in Riyadh, Jeddah and Dammam.`,
+                `With 210+ specialist products across 13 global brands, the company needed a website that could present a large, technical catalogue clearly while positioning Global Source as a long-term partner rather than just a product supplier.`,
+            ],
+            solution: [
+                `We designed and developed a modern, bilingual-ready corporate website built around the brand promise "More Than Products. A Partner You Can Trust."`,
+                `Products are organised by sector and by brand, so contractors and engineers can quickly find what they need, while clear "Enquire Now" actions turn browsing into qualified leads.`,
+            ]
+        },
+        secTwo: {
+            image: `global-source-2.jpg`,
+            title: `Making a Technical Catalogue Easy to Explore`,
+            text: [
+                `The information architecture was planned around how construction professionals actually search: by product sector, by brand, and by project.`,
+                `Clean layouts, strong imagery and consistent product cards keep a large catalogue easy to scan on desktop, tablet and mobile.`,
+            ]
+        },
+        features: [
+            `Modern Corporate Website`, `Product Sector Pages`, `Brand Showcase`,
+            `Projects & Clients`, `Blog Section`, `Enquiry Forms`,
+            `Regional Office Details`, `SEO-Friendly Structure`, `Fast Performance`,
+        ],
+        secThree: [
+            {
+                title: `Showcasing Specialist Product Sectors`,
+                text: [
+                    `The platform presents Global Source's core product sectors, including:`,
+                ],
+                chip: [
+                    `Precast Construction Accessories`, `Manhole Steps`, `Plastic Welding Machines`,
+                    `Power Tools`, `Diamond Tools`, `Pipe Welding Machines`,
+                ],
+                textEnd: `Each sector links to detailed product information, helping visitors move from discovery to enquiry with ease.`
+            },
+            {
+                title: `Highlighting Trusted Global Brands`,
+                text: [
+                    `A dedicated brands section brings Global Source's own and partner brands together, including:`,
+                ],
+                chip: [
+                    `PFS`, `Kaizen Cuts`, `Weldy`, `T2 Welding`, `Carbodiam`,
+                    `Leister`, `Diager`, `Cardi`, `Linktech`, `G-Lift`,
+                ],
+                textEnd: `This reinforces the company's credibility and the depth of its product portfolio.`
+            },
+        ],
+        technology: [
+            [`Next Js`, `devicon-nextjs-plain colored`],
+            [`React`, `devicon-react-original colored`],
+            [`TypeScript`, `devicon-typescript-plain colored`],
+        ],
+        outcome: [
+            `The new Global Source website gives the company a modern, professional digital presence that matches its 20+ years of industry expertise.`,
+            `With a well-structured catalogue, strong brand storytelling and clear enquiry paths, the platform makes it easier for contractors and partners across Saudi Arabia to discover products and connect with the team.`,
+        ]
+    },
+    {
+        id: `athma`,
+        featured: true,
+        category: [`UI/UX`, `Website`],
+        hero: {
+            title: `Athma`,
+            cat: `Mental Health`,
+            text: `Designing a Calm, Welcoming Digital Space for Mental Health Care`,
+            link: `https://athma.pages.dev/`,
+            image: `athma-1.jpg`,
+            chip: [`UI/UX Design`, `Website Development`, `Responsive Design`, `Accessibility`, `SEO Optimization`]
+        },
+        secOne: {
+            challenge: [
+                `Athma (My Mind. My Care.) is a mental health and counselling provider in Thrissur, Kerala, supporting children, adults, couples, families and older people through online and in-person sessions in Malayalam and English.`,
+                `Seeking help for mental health can feel daunting. Athma needed a website that felt safe and reassuring from the very first screen, while making it simple to understand the services and book a session.`,
+            ],
+            solution: [
+                `We designed and developed a warm, uncluttered website built around the message "Every Mind Deserves to Be Heard."`,
+                `Clear calls to action such as "Book a Session", "Talk to Our Team" and a quick self-check guide visitors gently towards support, while crisis resources are always visible for anyone who needs urgent help.`,
+            ]
+        },
+        secTwo: {
+            image: `athma-2.jpg`,
+            title: `Designing for Trust and Comfort`,
+            text: [
+                `Soft colours, generous spacing and friendly typography create a calm reading experience that reduces anxiety rather than adding to it.`,
+                `Content is written and structured in plain language so that people of every age can find the right kind of support quickly, on any device.`,
+            ]
+        },
+        features: [
+            `Calm, Accessible UI/UX`, `Service Pages by Audience`, `Online Session Booking CTA`,
+            `Self-Check Prompt`, `Client Testimonials`, `Events & Resources`,
+            `FAQ Section`, `Crisis Support Information`, `Newsletter Subscription`,
+        ],
+        secThree: [
+            {
+                title: `Support for Every Stage of Life`,
+                text: [
+                    `The website clearly presents Athma's counselling services for:`,
+                ],
+                chip: [
+                    `Children`, `Adults`, `Couples & Families`, `Mental Health Concerns`, `Elderly Care`,
+                ],
+                textEnd: `Each service explains who it is for and what to expect, helping visitors take the first step with confidence.`
+            },
+            {
+                title: `Building Confidence Through Proof`,
+                text: [
+                    `Impact figures and real client voices help build trust, highlighting:`,
+                ],
+                chip: [
+                    `6+ Years of Experience`, `1,000+ People Supported`, `50+ Mental Health Professionals`,
+                    `Certified Counsellors`, `Malayalam & English Sessions`,
+                ],
+                textEnd: `Together, these show visitors they are in safe, experienced hands.`
+            },
+        ],
+        technology: [
+            [`Next Js`, `devicon-nextjs-plain colored`],
+            [`React`, `devicon-react-original colored`],
+            [`TypeScript`, `devicon-typescript-plain colored`],
+        ],
+        outcome: [
+            `The new Athma website gives the organisation a compassionate, professional online presence that reflects its mission of accessible mental health care.`,
+            `By combining a calm design language with clear service information and simple booking paths, the platform makes reaching out for help feel easier and more approachable.`,
+        ]
+    },
+    {
+        id: `binjoy`,
+        featured: true,
+        category: [`UI/UX`, `Website`],
+        hero: {
+            title: `BINJOY`,
+            cat: `Finance & Accounting`,
+            text: `Clarity for Finances, Confidence for Business: A Modern Platform for a UAE Advisory Firm`,
+            link: `https://binjoy.com/`,
+            image: `binjoy-1.jpg`,
+            chip: [`UI/UX Design`, `Website Development`, `CMS Development`, `Responsive Design`, `SEO Optimization`]
+        },
+        secOne: {
+            challenge: [
+                `BINJOY is a UAE-based financial services firm, headquartered in Ajman, offering audit, accounting, tax and advisory services to businesses across the UAE.`,
+                `With a wide range of services and frequent regulatory updates such as VAT and e-invoicing changes, BINJOY needed a website that could explain complex topics simply and be updated quickly by its own team.`,
+            ],
+            solution: [
+                `We designed and developed a clean, professional website backed by a custom CMS, so BINJOY can publish hero campaigns, blogs and service updates without technical help.`,
+                `A structured services mega-menu, a clear growth model and industry pages help business owners quickly understand how BINJOY can support them at every stage.`,
+            ]
+        },
+        secTwo: {
+            image: `binjoy-2.jpg`,
+            title: `Making Complex Finance Easy to Navigate`,
+            text: [
+                `The interface uses clear hierarchy and concise messaging to turn dense financial and regulatory information into easy-to-scan content.`,
+                `Timely hero banners on topics like input VAT and e-invoicing deadlines keep the homepage relevant and drive enquiries.`,
+            ]
+        },
+        features: [
+            `Modern Corporate Website`, `Services Mega-Menu`, `Dynamic Hero Banners`,
+            `Blog & Insights`, `Industries Served`, `Growth Model (Start, Build, Grow, Scale)`,
+            `Custom CMS`, `SEO & Social Metadata`, `Enquiry Forms`,
+        ],
+        secThree: [
+            {
+                title: `Four Core Service Pillars`,
+                text: [
+                    `The website organises BINJOY's expertise into four clear service areas:`,
+                ],
+                chip: [
+                    `Audit & Assurance`, `Accounting & Bookkeeping`, `Consulting & Advisory`, `UAE Tax`,
+                ],
+                textEnd: `Each pillar expands into detailed sub-services, from statutory audits and payroll to corporate tax and CFO services.`
+            },
+            {
+                title: `Smart Content Management`,
+                text: [
+                    `A custom CMS gives the BINJOY team full control over:`,
+                ],
+                chip: [
+                    `Hero Banners`, `Blogs & Articles`, `Services`, `Industries`,
+                    `Media Uploads`, `SEO Metadata`,
+                ],
+                textEnd: `This keeps the website current with the latest regulatory changes and firm news.`
+            },
+        ],
+        technology: [
+            [`Next Js`, `devicon-nextjs-plain colored`],
+            [`Laravel`, `devicon-laravel-original colored`],
+            [`PHP`, `devicon-php-plain colored`],
+            [`MySQL`, `devicon-mysql-plain-wordmark colored`],
+        ],
+        outcome: [
+            `The new BINJOY website presents the firm as a modern, trusted financial partner for UAE businesses.`,
+            `With a fast Next.js frontend and an easy-to-use Laravel CMS, the platform simplifies content updates, improves search visibility and turns timely financial insights into qualified client enquiries.`,
+        ]
+    },
+    {
+        id: `foster-aviation`,
+        featured: true,
+        category: [`UI/UX`, `Website`],
+        hero: {
+            title: `Foster Aviation`,
+            cat: `Aviation`,
+            text: `The Sky, Reimagined: A Premium Digital Presence for Advanced Air Mobility`,
+            link: `https://fosteraviation.aero/`,
+            image: `foster-aviation-1.jpg`,
+            chip: [`UI/UX Design`, `Website Development`, `Responsive Design`, `Performance Optimization`, `SEO Optimization`]
+        },
+        secOne: {
+            challenge: [
+                `Foster Aviation, part of the Foster International group, is a Dubai-based aviation company working across the full aviation lifecycle, from air charter and aircraft sales to eVTOLs and vertiport infrastructure.`,
+                `The company needed a premium website that matched the ambition of Advanced Air Mobility, while clearly explaining a wide range of services to high-value clients and partners.`,
+            ],
+            solution: [
+                `We designed and developed a sleek, image-led website built around the headline "The Sky, Reimagined."`,
+                `Services, partner aircraft and the Foster International legacy are presented through bold visuals and a clear structure, with a downloadable company profile and direct contact options for serious enquiries.`,
+            ]
+        },
+        secTwo: {
+            image: `foster-aviation-2.jpg`,
+            title: `A Premium, Future-Focused Experience`,
+            text: [
+                `Large aviation imagery, refined typography and a restrained colour palette give the website a luxury feel that suits an exclusive clientele.`,
+                `Optimised WebP media keeps the experience fast and smooth across desktop and mobile.`,
+            ]
+        },
+        features: [
+            `Premium Corporate Website`, `Image-Led UI/UX`, `Service Pages`,
+            `Aircraft Product Showcase`, `Partner Pages`, `Company Profile Download`,
+            `Contact & Enquiry`, `Optimised WebP Media`, `Fully Responsive`,
+        ],
+        secThree: [
+            {
+                title: `Covering the Full Aviation Lifecycle`,
+                text: [
+                    `The website showcases Foster Aviation's services, including:`,
+                ],
+                chip: [
+                    `Air Charter`, `Aircraft Sales & Acquisition`, `Vertiports`,
+                    `eVTOLs, UAV & UAS`, `Aviation Consultancy`, `Diamond Aircraft Sales Partner`,
+                ],
+                textEnd: `Each service is presented clearly so clients can understand the offering and get in touch quickly.`
+            },
+            {
+                title: `Showcasing Partner Aircraft`,
+                text: [
+                    `As an authorised Diamond Aircraft sales partner for the UAE, Oman and Saudi Arabia, the site features:`,
+                ],
+                chip: [
+                    `DA62`, `DA42-VI`, `DA50 RG`, `DA62 MPP`,
+                ],
+                textEnd: `Each aircraft is presented with high-quality visuals to support sales conversations.`
+            },
+        ],
+        technology: [
+            [`Next Js`, `devicon-nextjs-plain colored`],
+            [`React`, `devicon-react-original colored`],
+            [`TypeScript`, `devicon-typescript-plain colored`],
+        ],
+        outcome: [
+            `The new Foster Aviation website gives the company a premium digital presence that reflects its position at the forefront of aviation and Advanced Air Mobility in the region.`,
+            `With striking visuals, clear service information and fast performance, the platform strengthens the brand and supports high-value enquiries from clients and partners.`,
+        ]
+    },
     {
         id: `halsca`,
         category: [`Branding`, `Website`],
