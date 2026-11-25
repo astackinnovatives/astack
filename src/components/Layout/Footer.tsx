@@ -91,7 +91,13 @@ export default function Footer() {
                             </Link>
                             <Link
                                 className={css.footerLink}
-                                href="/career"
+                                href="/branding"
+                            >
+                                Branding
+                            </Link>
+                            <Link
+                                className={css.footerLink}
+                                href="/careers"
                             >
                                 Career
                             </Link>

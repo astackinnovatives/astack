@@ -30,6 +30,7 @@ const navLinks: NavLink[] = [
     { href: "/about", label: "About" },
     { href: '/solutions', label: 'Solutions' },
     { href: '/works', label: 'Works' },
+    { href: '/branding', label: 'Branding' },
     { href: '/careers', label: 'Careers' },
     // {
     //     label: 'our projects',

@@ -1,5 +1,6 @@
 import Bottom from "@/components/Common/Bottom";
 import Branding from "@/components/Home/Branding";
+import BrandShowcase from "@/components/Home/BrandShowcase";
 import FAQ from "@/components/Home/FAQ";
 import Hero from "@/components/Home/Hero";
 import OurClients from "@/components/Home/OurClients";
@@ -21,6 +22,7 @@ export default function Page() {
             <Branding />
             <OurSolutions />
             <OurWorks />
+            <BrandShowcase />
             <OurClients />
             <Testimonials />
             <FAQ />
