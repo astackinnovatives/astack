@@ -8,7 +8,7 @@ export type BrandProject = {
     /** card image in /public/assets/images/branding */
     image: string;
     /** what the inner page is: a brand identity case study or a website landing page */
-    kind: "Brand identity" | "Landing page";
+    kind: "Brand identity" | "Rebranding";
     /** brand palette (primary, accent, deep) used by the home showcase */
     palette: [string, string, string];
 }
@@ -18,19 +18,19 @@ export const brandProjects: BrandProject[] = [
         slug: `global-source`,
         title: `Global Source`,
         cat: `Construction Products · Saudi Arabia`,
-        text: `A bilingual identity for a Saudi construction-products specialist: more than products, a partner you can trust.`,
+        text: `People first, trust always: a bilingual Arabic–English identity for a Saudi construction-products specialist.`,
         image: `global-source.jpg`,
         kind: `Brand identity`,
-        palette: [`#113855`, `#E00F48`, `#0A2236`],
+        palette: [`#123B55`, `#E01747`, `#0A2236`],
     },
     {
         slug: `athma`,
         title: `Athma`,
-        cat: `Mental Health · Kerala`,
-        text: `A calm, caring identity for a counselling practice where every mind deserves to be heard.`,
+        cat: `Mental Health Care · Kerala`,
+        text: `My mind. My care. A rebrand for mental health care that feels less intimidating, more accessible and deeply human.`,
         image: `athma.jpg`,
-        kind: `Brand identity`,
-        palette: [`#6D2877`, `#55B130`, `#2A0F31`],
+        kind: `Rebranding`,
+        palette: [`#6C2877`, `#58B031`, `#2A0F31`],
     },
     {
         slug: `binjoy`,
@@ -44,10 +44,10 @@ export const brandProjects: BrandProject[] = [
     {
         slug: `foster-aviation`,
         title: `Foster Aviation`,
-        cat: `Aviation · Dubai`,
-        text: `The sky, reimagined: an identity for an aviation company working from air charter to eVTOL and vertiports.`,
+        cat: `Aviation · Dubai South`,
+        text: `The Sky, Reimagined: an identity and guidelines for a Dubai South aviation company, from air charter to eVTOL.`,
         image: `foster-aviation.jpg`,
         kind: `Brand identity`,
-        palette: [`#107A73`, `#07BF9B`, `#03201B`],
+        palette: [`#0B1A2C`, `#C9A66B`, `#1C1C1C`],
     },
 ]
